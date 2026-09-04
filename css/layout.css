@@ -321,3 +321,8 @@
     border-color: var(--accent-primary);
     color: var(--text-primary);
   }
+
+  .nav__link--active {
+    color: var(--accent-primary) !important;
+    font-weight: 600;
+  }
