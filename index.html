@@ -184,16 +184,65 @@
         [Mención breve pendiente — Presentación de Lenguajes y Frameworks, Commit 07]
       </p>
     </section>
-    <section id="contacto" class="contacto" aria-labelledby="contacto-title">
-      <h2 id="contacto-title">Contacto</h2>
-      <p>[Email / GitHub / LinkedIn — pendiente de confirmación]</p>
-    </section>
+  <!-- Sección Contacto -->
+  <section id="contacto" class="contacto section" aria-labelledby="contacto-title">
+    <div class="container">
+      <h2 id="contacto-title" class="section__title">Contacto</h2>
+      <p class="contacto__intro">
+        ¿Tienes una propuesta de proyecto, vacante de práctica o consulta técnica? Envíame un mensaje o escríbeme directamente.
+      </p>
 
-  </main>
+      <div class="contacto__wrapper">
+        <div class="contacto__info">
+          <div class="contacto__item">
+            <span class="contacto__icon">✉️</span>
+            <div>
+              <h4 class="contacto__label">Correo Electrónico</h4>
+              <a href="mailto:kleiderson@ejemplo.com" class="contacto__value">kleiderson.salcedo@gmail.com</a>
+            </div>
+          </div>
 
-  <footer class="site-footer">
-    <p>&copy; 2026 Kleiderson Salcedo</p>
-  </footer>
+          <div class="contacto__item">
+            <span class="contacto__icon">🌐</span>
+            <div>
+              <h4 class="contacto__label">Redes & Perfiles</h4>
+              <div class="contacto__links">
+                <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form id="contact-form" class="contacto__form">
+          <div class="form-group">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" id="name" name="name" class="form-input" required placeholder="Tu nombre">
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Correo Electrónico</label>
+            <input type="email" id="email" name="email" class="form-input" required placeholder="tu@email.com">
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Mensaje</label>
+            <textarea id="message" name="message" class="form-input form-textarea" required placeholder="¿En qué te puedo ayudar?" rows="4"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full">Enviar Mensaje</button>
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 Kleiderson Salcedo. Desarrollado con HTML5, CSS3 y JS Vanilla.</p>
+  </div>
+</footer>
     
   <script src="js/script.js" defer></script>
 </body>
