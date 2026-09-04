@@ -193,3 +193,77 @@
   
   .code-key { color: var(--accent-primary); }
   .code-string { color: var(--accent-secondary); }
+
+
+  /* ==========================================
+   SECCIÓN SOBRE MÍ
+   ========================================== */
+.sobre-mi__text {
+  color: var(--text-secondary);
+  font-size: var(--font-lg);
+  max-width: 800px;
+  margin-bottom: var(--space-2xl);
+  line-height: 1.7;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .about-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.about-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.about-card:hover {
+  border-color: var(--border-focus);
+  transform: translateY(-2px);
+}
+
+.about-card__icon {
+  font-size: var(--font-2xl);
+  display: block;
+  margin-bottom: var(--space-sm);
+}
+
+.about-card__title {
+  font-size: var(--font-base);
+  margin-bottom: var(--space-xs);
+  color: var(--text-primary);
+}
+
+.about-card__desc {
+  font-size: var(--font-sm);
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Títulos de Sección Reutilizables */
+.section__title {
+  font-size: var(--font-2xl);
+  margin-bottom: var(--space-lg);
+  position: relative;
+  display: inline-block;
+}
+
+.section__title::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: var(--accent-primary);
+  border-radius: var(--radius-full);
+}
