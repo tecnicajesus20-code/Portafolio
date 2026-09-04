@@ -55,3 +55,20 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 sections.forEach((section) => observer.observe(section));
+
+document.addEventListener('DOMContentLoaded', () => {
+   const revealElements = document.querySelectorAll('.reveal');
+ 
+   const revealOnScroll = new IntersectionObserver((entries, observer) => {
+     entries.forEach(entry => {
+       if (entry.isIntersecting) {
+         entry.target.classList.add('active');
+         observer.unobserve(entry.target); // Se anima una sola vez
+       }
+     });
+   }, {
+     threshold: 0.15 // Activa la animación cuando el 15% del elemento es visible
+   });
+ 
+   revealElements.forEach(element => revealOnScroll.observe(element));
+ });
