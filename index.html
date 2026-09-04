@@ -6,75 +6,72 @@
   <title>Kleiderson Salcedo — Portafolio</title>
 
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/Layout.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="main-nav" aria-label="Navegación principal">
-      <a class="nav-brand" href="#hero">Kleiderson Salcedo</a>
-      <ul class="nav-list">
-        <li><a href="#hero">Inicio</a></li>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#skills">Habilidades</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="container header__container">
+      <a href="#hero" class="header__logo">
+        <span class="logo__mark">&lt;/&gt;</span>
+        <span class="logo__text">Kleiderson Salcedo</span>
+      </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="#hero" class="nav__link">Inicio</a></li>
+          <li><a href="#sobre-mi" class="nav__link">Sobre mí</a></li>
+          <li><a href="#skills" class="nav__link">Habilidades</a></li>
+          <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
+          <li><a href="#contacto" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
 
-    <section id="hero" class="hero" aria-labelledby="hero-title">
-      <h1 id="hero-title">[Nombre] — [rol / tagline pendiente]</h1>
-      <p class="hero-lead">[Presentación breve — contenido pendiente, Commit 04]</p>
-      <div class="hero-cta">
-        <a class="btn btn--primary" href="#proyectos">[CTA principal]</a>
-        <a class="btn btn--secondary" href="#contacto">[CTA secundario]</a>
-      </div>
-    </section>
-
-    <section id="sobre-mi" class="sobre-mi" aria-labelledby="sobre-mi-title">
-      <h2 id="sobre-mi-title">Sobre mí</h2>
-      <p>[Contenido pendiente — Commit 05]</p>
-    </section>
-
-    <section id="skills" class="skills" aria-labelledby="skills-title">
-      <h2 id="skills-title">Habilidades</h2>
-
-      <div class="skills-categoria">
-        <h3>Frontend</h3>
-        <ul>
-          <li>[pendiente]</li>
-        </ul>
-      </div>
-
-      <div class="skills-categoria">
-        <h3>Programming</h3>
-        <ul>
-          <li>[pendiente]</li>
-        </ul>
-      </div>
-
-      <div class="skills-categoria">
-        <h3>Automation</h3>
-        <ul>
-          <li>[pendiente]</li>
-        </ul>
-      </div>
-
-      <div class="skills-categoria">
-        <h3>AI</h3>
-        <ul>
-          <li>[pendiente]</li>
-        </ul>
-      </div>
-
-      <div class="skills-categoria">
-        <h3>Tools</h3>
-        <ul>
-          <li>[pendiente]</li>
-        </ul>
-      </div>
-    </section>
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="hero section">
+        <div class="container hero__container">
+          <div class="hero__content">
+            <div class="badge badge--status">
+              <span class="badge__dot"></span>
+              Disponible para prácticas y proyectos
+            </div>
+            <h1 class="hero__title">
+              Desarrollador Software &amp; Integrador de Sistemas
+            </h1>
+            <p class="hero__subtitle">
+              Estudiante de Ingeniería de Software enfocado en el desarrollo de lógica web,
+              arquitectura de módulos e integración de automatizaciones con IA generativa.
+            </p>
+            <div class="hero__actions">
+              <a href="#proyectos" class="btn btn--primary">Ver Proyectos</a>
+              <a href="#contacto" class="btn btn--secondary">Contactar</a>
+            </div>
+          </div>
+          <div class="hero__visual">
+            <div class="code-card">
+              <div class="code-card__header">
+                <span class="code-card__dot code-card__dot--red"></span>
+                <span class="code-card__dot code-card__dot--yellow"></span>
+                <span class="code-card__dot code-card__dot--green"></span>
+                <span class="code-card__title">profile.json</span>
+              </div>
+              <pre class="code-card__body"><code>{
+    <span class="code-key">"nombre"</span>: <span class="code-string">"Kleiderson Salcedo"</span>,
+    <span class="code-key">"rol"</span>: <span class="code-string">"Software Developer Junior"</span>,
+    <span class="code-key">"enfoque"</span>: [
+      <span class="code-string">"Lógica Frontend / Web Components"</span>,
+      <span class="code-string">"Agentes de IA &amp; n8n"</span>,
+      <span class="code-string">"Python Scripting"</span>
+    ],
+    <span class="code-key">"ubicacion"</span>: <span class="code-string">"Cúcuta, Colombia"</span>
+  }</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
 
     <section id="proyectos" class="proyectos" aria-labelledby="proyectos-title">
       <h2 id="proyectos-title">Proyectos</h2>
