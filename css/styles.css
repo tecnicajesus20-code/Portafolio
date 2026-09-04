@@ -246,3 +246,35 @@
       transition-duration: 0.01ms !important;
     }
   }
+
+  /* Limpieza de viñetas y márgenes de la lista */
+.features-list, 
+.caracteristicas-list, 
+ul {
+  list-style: none;         /* Elimina los puntos / viñetas sobrantes */
+  padding: 0;              /* Elimina el espacio interno izquierdo predeterminado */
+  margin: 0 auto;          /* Elimina márgenes extra y centra el contenedor */
+  max-width: 600px;        /* Mantiene un ancho controlado para que no se expanda demasiado */
+  text-align: left;        /* Mantiene el texto de los ítems alineado uniformemente */
+}
+
+/* Formato para cada elemento de la lista */
+.features-list li,
+ul li {
+  background-color: #f8f9fa;  /* Un fondo suave para dar estructura de tarjeta */
+  border: 1px solid #e0e0e0;  /* Borde sutil */
+  border-radius: 8px;        /* Bordes redondeados modernos */
+  padding: 12px 16px;        /* Espaciado interno cómodo */
+  margin-bottom: 10px;       /* Separación vertical entre elementos */
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Opcional: Si tus ítems llevan ícono al inicio */
+.features-list li i,
+ul li svg {
+  margin-right: 10px;
+  color: #2e7d32;            /* Verde temático para EcoMarket */
+}

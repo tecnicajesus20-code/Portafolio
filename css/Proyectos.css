@@ -1,0 +1,131 @@
+/* Layout General de la Sección */
+.proyectos {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: system-ui, -apple-system, sans-serif;
+    color:#f1f5f9 ;
+  }
+  
+  .proyectos h2 {
+    font-size: 2rem;
+    margin-bottom: 24px;
+    color: #1a1a1a;
+  }
+  
+  .card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin-bottom: 24px;
+  }
+  
+  .proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+  }
+  
+  .proyectos-grid .card-link {
+    margin-bottom: 0;
+  }
+  
+  /* Base de la Card de Proyecto */
+  .proyecto {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    border: 1px solid #e2e8f0;
+    border-left: 6px solid var(--theme-color, #64748b);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* EFECTO HOVER */
+  .card-link:hover .proyecto {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .proyecto h3 {
+    margin: 0 0 12px 0;
+    font-size: 1.35rem;
+    color: #0f172a;
+  }
+  
+  .proyecto-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #475569;
+    flex-grow: 1;
+    margin-bottom: 20px;
+  }
+  
+  /* PALETA DE COLORES TEMÁTICOS POR PROYECTO */
+  
+  /* 1. TutorBot: Morado / Inteligencia Artificial */
+  .proyecto--destacado {
+    --theme-color: #7c3aed;
+    background: linear-gradient(135deg, #ffffff 0%, #f5f3ff 100%);
+  }
+  
+  /* 2. SeVenTonic: Azul Eléctrico / Dashboard / Analytics */
+  .proyecto--seventonic {
+    --theme-color: #0284c7;
+  }
+  
+  /* 3. EcoMarket: Verde Ecológico */
+  .proyecto--ecomarket {
+    --theme-color: #16a34a;
+  }
+  
+  /* 4. RestauranteACME: Ámbar / Cálido */
+  .proyecto--restaurante {
+    --theme-color: #ea580c;
+  }
+  
+  /* Elementos adicionales */
+  .proyecto-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .badge-destacado {
+    background-color: #7c3aed;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+  }
+  
+  .proyecto-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .tag {
+    background-color: #f1f5f9;
+    color: #334155;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+  }
+  
+  .proyectos-nota {
+    margin-top: 32px;
+    font-size: 0.9rem;
+    color: #64748b;
+    text-align: center;
+    font-style: italic;
+  }

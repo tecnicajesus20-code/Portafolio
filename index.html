@@ -7,6 +7,7 @@
 
   <link rel="stylesheet" href="css/styles.css"/>
   <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/Proyectos.css">
 </head>
 <body>
   <header class="header">
@@ -42,8 +43,7 @@
               Desarrollador Software &amp; Integrador de Sistemas
             </h1>
             <p class="hero__subtitle">
-              Estudiante de Ingeniería de Software enfocado en el desarrollo de lógica web,
-              arquitectura de módulos e integración de automatizaciones con IA generativa.
+              Estudiante de Ingeniería de Sistemas apasionado por la tecnología y el desarrollo de soluciones prácticas. Cuento con conocimientos en programación y desarrollo web, y busco transformar ideas en soluciones funcionales, mientras continúo fortaleciendo mis habilidades y creciendo profesionalmente..
             </p>
             <div class="hero__actions">
               <a href="#proyectos" class="btn btn--primary">Ver Proyectos</a>
@@ -62,9 +62,9 @@
     <span class="code-key">"nombre"</span>: <span class="code-string">"Kleiderson Salcedo"</span>,
     <span class="code-key">"rol"</span>: <span class="code-string">"Software Developer Junior"</span>,
     <span class="code-key">"enfoque"</span>: [
-      <span class="code-string">"Lógica Frontend / Web Components"</span>,
-      <span class="code-string">"Agentes de IA &amp; n8n"</span>,
-      <span class="code-string">"Python Scripting"</span>
+      <span class="code-string">"Python Scripting"</span>,
+      <span class="code-string">"Automatización &amp; n8n"</span>,
+      <span class="code-string">"Lógica Frontend / Web Components"</span>
     ],
     <span class="code-key">"ubicacion"</span>: <span class="code-string">"Cúcuta, Colombia"</span>
   }</code></pre>
@@ -79,7 +79,7 @@
           
           <div class="sobre-mi__content">
             <p class="sobre-mi__text">
-              Soy estudiante de Ingeniería de Software con un fuerte interés en la arquitectura de código limpia, la resolución de problemas lógicos y la automatización de procesos. Me apasiona entender cómo funcionan los sistemas desde sus bases y construir soluciones web funcionales combinando desarrollo frontend con integración de servicios de IA[cite: 1].
+              Soy un apasionado con los desafios con un fuerte interés en la creacion como base de estos, la resolución de problemas lógicos y la automatización de procesos. Me apasiona entender cómo funcionan los sistemas desde sus bases y construir soluciones web funcionales combinando desarrollo frontend con integración de servicios de IA.
             </p>
   
             <div class="about-grid">
@@ -87,15 +87,16 @@
                 <span class="about-card__icon">🎓</span>
                 <h3 class="about-card__title">Formación Académica</h3>
                 <p class="about-card__desc">
-                  Estudiante de Ingeniería de Software en la Universidad Francisco de Paula Santander (UFPS)[cite: 1].
+                  Estudiante de Ingeniería de Sistemas en la Universidad Francisco de Paula Santander (UFPS) y desarrollo de software en Campuslands.
                 </p>
+
               </div>
   
               <div class="about-card">
                 <span class="about-card__icon">⚙️</span>
                 <h3 class="about-card__title">Metodología & Trabajo</h3>
                 <p class="about-card__desc">
-                  Organización bajo metodologías agiles (Scrum), control de versiones riguroso con Git/GitHub y documentación clara[cite: 1].
+                  Organización bajo metodologías agiles (Scrum), control de versiones riguroso con Git/GitHub, comunicacion efectiva y una documentación clara.
                 </p>
               </div>
   
@@ -103,7 +104,7 @@
                 <span class="about-card__icon">🤖</span>
                 <h3 class="about-card__title">Automatización e IA</h3>
                 <p class="about-card__desc">
-                  Diseño de flujos de trabajo con n8n, integración de APIs y experimentación constante con agentes conversacionales[cite: 1].
+                  Diseño de flujos de trabajo con n8n, integración de APIs y experimentación constante con agentes conversacionales.
                 </p>
               </div>
             </div>
@@ -155,35 +156,82 @@
       </section>
 
       
-    <section id="proyectos" class="proyectos" aria-labelledby="proyectos-title">
-      <h2 id="proyectos-title">Proyectos</h2>
-
-      <article class="proyecto proyecto--destacado" aria-labelledby="proyecto-destacado-title">
-        <h3 id="proyecto-destacado-title">Chatbot de Asesorías (n8n + IA generativa)</h3>
-        <p>[Descripción pendiente — proyecto destacado, Commit 07]</p>
-      </article>
-
-      <div class="proyectos-grid">
-        <article class="proyecto" aria-labelledby="proyecto-seventonic-title">
-          <h3 id="proyecto-seventonic-title">SeVenTonic</h3>
-          <p>[Descripción pendiente]</p>
-        </article>
-
-        <article class="proyecto" aria-labelledby="proyecto-ecomarket-title">
-          <h3 id="proyecto-ecomarket-title">EcoMarket</h3>
-          <p>[Descripción pendiente]</p>
-        </article>
-
-        <article class="proyecto" aria-labelledby="proyecto-restaurante-title">
-          <h3 id="proyecto-restaurante-title">RestauranteACME</h3>
-          <p>[Descripción pendiente]</p>
-        </article>
-      </div>
-
-      <p class="proyectos-nota">
-        [Mención breve pendiente — Presentación de Lenguajes y Frameworks, Commit 07]
-      </p>
-    </section>
+      <section id="proyectos" class="proyectos" aria-labelledby="proyectos-title">
+        <h2 id="proyectos-title" style="color:var(--accent-secondary);">Proyectos Destacados</h2>
+      
+        <!-- Proyecto Destacado: TutorBot -->
+        <a href="https://github.com/tecnicajesus20-code/Chatbot-de-Asesorias-Yisus.git" class="card-link" target="_blank" rel="noopener noreferrer">
+          <article class="proyecto proyecto--destacado" aria-labelledby="proyecto-destacado-title">
+            <div class="proyecto-header">
+              <h3 id="proyecto-destacado-title">Chatbot de Asesorías (TutorBot)</h3>
+              <span class="badge-destacado">Destacado</span>
+            </div>
+            <p class="proyecto-desc">
+              Agente inteligente diseñado para automatizar integralmente la gestión, reserva y seguimiento de tutorías académicas. Implementado mediante arquitecturas de flujos en n8n e integrando modelos de IA generativa, el sistema conecta de forma directa la plataforma de mensajería de Telegram con Google Sheets como base de datos operacional. Permite una atención interactiva y centralizada en tiempo real, procesando solicitudes de estudiantes de manera autónoma y optimizando la disponibilidad de horarios.
+            </p>
+            <div class="proyecto-tags">
+              <span class="tag">n8n</span>
+              <span class="tag">IA Generativa</span>
+              <span class="tag">Telegram API</span>
+              <span class="tag">Google Sheets</span>
+            </div>
+          </article>
+        </a>
+      
+        <!-- Grid de Proyectos Secundarios -->
+        <div class="proyectos-grid">
+          
+          <!-- SeVenTonic -->
+          <a href="https://github.com/tu-usuario/seventonic" class="card-link" target="_blank" rel="noopener noreferrer">
+            <article class="proyecto proyecto--seventonic" aria-labelledby="proyecto-seventonic-title">
+              <h3 id="proyecto-seventonic-title">SeVenTonic</h3>
+              <p class="proyecto-desc">
+                Plataforma web enfocada en la administración analítica y visualización de datos comerciales. Cuenta con un dashboard dinámico para el cálculo automátizado de métricas e indicadores clave de rendimiento (KPIs), simulación interactiva de registros de ventas y módulos avanzados para la gestión estructurada de catálogos de productos.
+              </p>
+              <div class="proyecto-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML5/CSS3</span>
+                <span class="tag">Analytics</span>
+              </div>
+            </article>
+          </a>
+      
+          <!-- EcoMarket -->
+          <a href="https://github.com/tu-usuario/ecomarket" class="card-link" target="_blank" rel="noopener noreferrer">
+            <article class="proyecto proyecto--ecomarket" aria-labelledby="proyecto-ecomarket-title">
+              <h3 id="proyecto-ecomarket-title">EcoMarket</h3>
+              <p class="proyecto-desc">
+                Plataforma de e-commerce responsiva con enfoque ecológico y sostenible. Diseñada con prioridad en la experiencia de usuario (UX) y la accesibilidad web, incorpora catálogos interactivos, componentes visuales modulares, formularios validados y maquetación adaptativa fluida para dispositivos móviles y de escritorio.
+              </p>
+              <div class="proyecto-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3 Grid/Flexbox</span>
+                <span class="tag">Responsive</span>
+              </div>
+            </article>
+          </a>
+      
+          <!-- RestauranteACME -->
+          <a href="https://github.com/tu-usuario/restaurante-acme" class="card-link" target="_blank" rel="noopener noreferrer">
+            <article class="proyecto proyecto--restaurante" aria-labelledby="proyecto-restaurante-title">
+              <h3 id="proyecto-restaurante-title">RestauranteACME</h3>
+              <p class="proyecto-desc">
+                Sistema de Punto de Venta (POS) desarrollado bajo una arquitectura modular sólida en Python y de uso exclusivo en la consola. Administra de principio a fin el flujo operativo comercial: desde la inscripción y validación de clientes, control y asignación de mesas en tiempo real, hasta la facturación automatizada y exportación de reportes de ventas en JSON.
+              </p>
+              <div class="proyecto-tags">
+                <span class="tag">Python</span>
+                <span class="tag">POO</span>
+                <span class="tag">JSON</span>
+              </div>
+            </article>
+          </a>
+      
+        </div>
+      
+        <p class="proyectos-nota">
+          💡 Prototipado, arquitectura de software y fundamentación técnica respaldados por investigaciones sobre lenguajes de programación, frameworks y metodologías ágiles.
+        </p>
+      </section>
   <!-- Sección Contacto -->
   <section id="contacto" class="contacto section" aria-labelledby="contacto-title">
     <div class="container">
@@ -198,7 +246,7 @@
             <span class="contacto__icon">✉️</span>
             <div>
               <h4 class="contacto__label">Correo Electrónico</h4>
-              <a href="mailto:kleiderson@ejemplo.com" class="contacto__value">kleiderson.salcedo@gmail.com</a>
+              <a href="mailto:kleiderson@ejemplo.com" class="contacto__value">Tecnicajesus20@gmail.com</a>
             </div>
           </div>
 
@@ -207,7 +255,7 @@
             <div>
               <h4 class="contacto__label">Redes & Perfiles</h4>
               <div class="contacto__links">
-                <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://github.com/tecnicajesus20-code" target="_blank" rel="noopener">GitHub</a>
                 <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
               </div>
             </div>
